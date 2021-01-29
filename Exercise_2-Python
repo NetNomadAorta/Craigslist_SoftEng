@@ -1,0 +1,30 @@
+for i in range(3):
+    print("Insert Number_" + str(i+1) + ":")
+    globals()['Number_%s' % str(i+1)] = int(input())
+    
+Add = Number_1 + Number_2
+Sub = Number_1 - Number_2
+Mult = Number_1 * Number_2
+Div = Number_1 / Number_2
+Do_Any_Work = 0
+
+print("Functions that work if 'Number_1 (operation) Number_2 = Number_3' is true are displayed below:")
+
+if Add == Number_3:
+    print("Number_1 + Number_2 = Number_3")
+    Do_Any_Work = 1
+    
+if Sub == Number_3:
+    print("Number_1 - Number_2 = Number_3")
+    Do_Any_Work = 1
+    
+if Mult == Number_3:
+    print("Number_1 * Number_2 = Number_3")
+    Do_Any_Work = 1
+    
+if Div == Number_3:
+    print("Number_1 / Number_2 = Number_3")
+    Do_Any_Work = 1
+    
+if Do_Any_Work == 0:
+    print("None")
