@@ -8,7 +8,7 @@ Mult = Number_1 * Number_2
 Div = Number_1 / Number_2
 Do_Any_Work = 0
 
-print("Functions with operands that make 'Number_1 (operation) Number_2 = Number_3' true are displayed below:")
+print("Functions with operation that make 'Number_1 (operation) Number_2 = Number_3' true are displayed below:")
 
 if Add == Number_3:
     print("Number_1 + Number_2 = Number_3")
