@@ -1,0 +1,50 @@
+package CraigAdTechQuest;
+
+import java.util.Scanner;
+
+public class Exercise2 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] numbers = {0,0,0};
+
+        // for i in range stuff
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Input Number_" + (i+1) + ":");
+            numbers[i] = scanner.nextInt();
+        }
+
+        int Add = numbers[0] + numbers[1];
+        int Sub = numbers[0] - numbers[1];
+        int Mult = numbers[0] * numbers[1];
+        int Div = numbers[0] / numbers[1];
+        int Do_Any_Work = 0;
+
+        System.out.println("Functions with operation that make 'Number_1 (operation) Number_2 = Number_3' true are displayed below:");
+
+        if (Add == numbers[2]) {
+            System.out.println("Number_1 + Number_2 = Number_3");
+            Do_Any_Work = 1;
+        }
+
+        if (Sub == numbers[2]) {
+            System.out.println("Number_1 - Number_2 = Number_3");
+            Do_Any_Work = 1;
+        }
+
+        if (Mult == numbers[2]) {
+            System.out.println("Number_1 * Number_2 = Number_3");
+            Do_Any_Work = 1;
+        }
+
+        if (Div == numbers[2]) {
+            System.out.println("Number_1 / Number_2 = Number_3");
+            Do_Any_Work = 1;
+        }
+
+        if (Do_Any_Work == 0) {
+            System.out.println("None");
+        }
+
+    }
+}
